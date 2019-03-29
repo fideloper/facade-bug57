@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \App\MyFacade::addData('foo');
+        \App\MyFacade::addData('bar');
     }
 
     /**
